@@ -1812,7 +1812,7 @@ img {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
-  padding-right: 32px;
+  /* padding-right: 32px; */
 
   color: #000000;
 }
