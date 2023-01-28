@@ -211,7 +211,7 @@ img {
   color: var(--grey-cl);
 }
 
-.btn {
+.btn-old {
   min-width: 160px;
   min-height: 40px;
   padding: 11px 19px;
@@ -232,8 +232,8 @@ img {
   transition: color var(--anim-fast), background-color var(--anim-fast);
 }
 
-.btn:hover,
-.btn:focus {
+.btn-old:hover,
+.price-btn-old:focus {
   color: var(--light-txt-cl);
   background-color: var(--accent-bg-cl);
 }
@@ -1711,7 +1711,6 @@ img {
   padding-bottom: 32px;
 }
 .menu {
-  /* max-width: 1600px; */
   min-width: 320px;
   margin: 0 auto;
   background-color: #F0ECD6;
@@ -1730,19 +1729,8 @@ img {
   margin-bottom: 32px;
 }
 .menu-item {
-  /* align-items: baseline; */
-
-  /* font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-
-  color: #000000; */
+  margin-bottom: 16px;
 }
-/* .menu-item:not(:last-child) {
-  margin-bottom: 20px;
-}  */
 
 /* .menu-item::before {
   content: '';
@@ -1759,7 +1747,6 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-
   color: #000000;
   padding-bottom: 16px;
 }
@@ -1774,13 +1761,15 @@ img {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
-
   color: #000000;
 }
-
+.menu-text-drink {
+  margin-bottom: 32px;
+}
+.menu-item .menu-text:not(:last-child) {
+  margin-bottom: 8px;
+}  
 .menu-dish {
-  /* display: block;
-  margin-left: 0; */
   width: 220px;
 }
 .menu-dish-name {
@@ -1790,9 +1779,11 @@ img {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
-
   color: #000000;
   padding-bottom: 4px;
+}
+.menu-dish .no-description {
+  padding-bottom: 0;
 }
 .menu-dish-text {
   font-family: 'Montserrat';
@@ -1801,9 +1792,7 @@ img {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.02em;
-
-  color: #000000;
-  padding-bottom: 16px;
+  color: #000000; 
 }
 .menu-item-service {
   font-family: 'Montserrat';
@@ -1812,8 +1801,6 @@ img {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
-  /* padding-right: 32px; */
-
   color: #000000;
 }
 
@@ -1823,33 +1810,35 @@ img {
     max-width: 930px;
   }
   .section {
-      padding-top: 58px;
-      padding-bottom: 40px;
-    }
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
   .menu-block {
     margin-bottom: 41px;
     display: flex;
     justify-content: space-between;
   }
-  .menu-list {
-    /* flex-basis: 411px; */
-    /* padding: 30px 20px; */
+  .menu-item:not(:last-child) {
+    margin-bottom: 20px;
   }
-    /* .menu-list:first-child {
-      padding-right: 88px;
-    } */
+  .menu-item:last-child {
+    margin-bottom: 0;
+  }
   .menu-title {
     padding-bottom: 40px;
+  }
+  .menu-mini-title {
+    padding-bottom: 20px;
   }
   .menu-dish {
     display: block;
     margin-left: 0;
     /* width: 225px; */
   }
-    .menu-item-service {
-      padding-right: 47px;
-      padding-left: 25px;
-    }
+  .menu-item-service {
+    padding-right: 47px;
+    padding-left: 25px;
+  }
 }
 
 
@@ -1865,7 +1854,9 @@ img {
   }
   .menu-list {
     flex-basis: 485px;
-    /* padding: 30px 20px; */
+  }
+  .menu-item .menu-text:not(:last-child) {
+    margin-bottom: 12px;
   }
   .menu-mini-title {
     font-size: 24px;
@@ -1875,44 +1866,14 @@ img {
     font-size: 16px;
     line-height: 20px;
   }
+  .menu-dish {
+    width: 291px;
+  }
   .menu-dish-name {
     font-size: 16px;
     line-height: 20px;
-  }
-  .menu-dish {
-     width: 291px; 
-  }
-  /* .menu-item-service {
-    padding-right: 60px;
-  } */
+  }   
 }
-
-@media screen and (max-width: 1199.98px) {
-  
-  /* .menu-list:first-child {
-    margin-bottom: 20px;
-  } */
-}
-  
-
-/* @media screen and (max-width: 767.98px) {
-  .menu-item {
-    font-size: 14px;
-  }
-} */
-/* @media screen and (max-width: 1199.98px) {
-  .menu-block {
-    padding: 32px 34px;
-
-  }
-} */
-
-/* @media screen and (max-width: 767.98px) {
-  .menu-block {
-    padding: 30px;
-  }
-} */
-
 
 /* .menu-item-service {
   order: -1;
@@ -1921,4 +1882,43 @@ img {
 .menu-btn {
   display: block;
   margin: 0 auto;
+}
+
+.btn {
+  width: 236px;
+  height: 48px;
+  padding: 14px 22px;
+
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #F3C653;
+
+  background-color: #000000;
+  border: 2px solid #F0ECD6;
+  border-radius: 25px;
+  cursor: pointer;
+  /* box-sizing: border-box; */
+  /* transition: solid #F3C653, background-color #F3C653; */
+}
+
+
+
+
+
+.btn:hover,
+.btn:focus {
+  /* color: var(--light-txt-cl); */
+  background-color: #FFFFFF;
+}
+
+.btn-restaurant-page {
+  color: #F3C653;
+}
+@media screen and (min-width: 1024px) {
+  .btn-restaurant-page {
+    margin-right: 0;
+  }
 }
