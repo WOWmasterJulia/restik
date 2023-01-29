@@ -1701,12 +1701,11 @@ p {
   | Price 
   |============================
 */
-.container {
+.restaurant-container {
   /* phone screen */
   min-width: 320px;
-  max-width: 414px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 414px; 
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -1724,6 +1723,9 @@ p {
 .section {
   padding-top: 32px;
   padding-bottom: 32px;
+
+    padding-right: 15px;
+      padding-left: 15px;
 }
 .menu {
   min-width: 320px;
@@ -1823,7 +1825,7 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
+  .restaurant-container {
     max-width: 930px;
   }
   .section {
@@ -1860,7 +1862,7 @@ p {
 
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .restaurant-container {
     max-width: 1110px;
   }
   .section {
@@ -1876,6 +1878,7 @@ p {
     margin-bottom: 12px;
   }
   .menu-mini-title {
+
     font-size: 24px;
     line-height: 28px;
   }
